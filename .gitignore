@@ -1,0 +1,13 @@
+# --- Datos (Ignorar todos los CSV) ---
+*.csv
+
+# --- Archivos de Sistema (Mac) ---
+.DS_Store
+
+# --- Jupyter Notebooks (Checkpoints automáticos) ---
+.ipynb_checkpoints
+*/.ipynb_checkpoints/*
+
+# --- Python (Archivos compilados y cache) ---
+__pycache__/
+*.pyc
