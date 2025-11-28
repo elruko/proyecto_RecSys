@@ -1,22 +1,34 @@
-# Recomendador — instrucciones rápidas
+# Proyecto RecSys: Board Game Database
 
-Versión breve para ejecutar `main.ipynb` y obtener las comparaciones (juegos que le gustan al usuario vs juegos recomendados por SVD).
+Este proyecto utiliza el dataset Board Game Database de Kaggle para construir y analizar sistemas de recomendación de juegos de mesa.
 
-1) Crear y activar un entorno (PowerShell):
+## Instalación y ejecución
 
-```powershell
-python -m venv .venv ; .\.venv\Scripts\Activate.ps1
+1. **Clona el repositorio**
+
+2. **Instala las dependencias**
+
+```bash
 pip install -r requirements.txt
 ```
 
-2) Abrir Jupyter en la carpeta del proyecto:
+3. **Descarga los archivos CSV**
 
-```powershell
-jupyter lab
-# o
-jupyter notebook
-```
+- Ve a [Board Game Database (Kaggle)](https://www.kaggle.com/datasets/threnjen/board-games-database-from-boardgamegeek)
+- Descarga el dataset y copia los archivos CSV en la carpeta `csv/` del proyecto.
 
-3) En el notebook, ejecuta las celdas en orden: carga de datos, utilidades, split (make_holdout_by_user), generación de candidatos (`build_eval_candidates`) y el/los modelos que quieras.
+4. **Ejecuta el notebook**
 
-4) Para ejecutar los gráficos no es necesario correr toda la plantilla ya que el punto 4 contiene todos los datos recolectados con anterioridad.
+Abre `main.ipynb` en Jupyter Notebook o VS Code y ejecuta las celdas para analizar y visualizar los datos.
+
+---
+
+## Requisitos principales
+- Python 3.8+
+- Pandas
+- Matplotlib
+- Seaborn
+- scikit-learn
+- surprise
+
+Las dependencias están listadas en `requirements.txt`.
